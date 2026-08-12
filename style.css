@@ -12,9 +12,9 @@
   --font: 'Outfit', sans-serif;
 
   /* Color palette */
-  --bg-start: #0f0c29;
-  --bg-mid:   #302b63;
-  --bg-end:   #24243e;
+  --bg-start: #1c1a17;
+  --bg-mid:   #292316;
+  --bg-end:   #18150f;
 
   --glass-bg:     rgba(255, 255, 255, 0.06);
   --glass-border: rgba(255, 255, 255, 0.12);
@@ -22,15 +22,15 @@
 
   --btn-num-bg:    rgba(255, 255, 255, 0.10);
   --btn-func-bg:   rgba(255, 255, 255, 0.18);
-  --btn-op-bg:     rgba(99, 102, 241, 0.55);
-  --btn-eq-bg:     linear-gradient(135deg, #a78bfa, #6366f1);
+  --btn-op-bg:     rgba(234, 179, 8, 0.55);
+  --btn-eq-bg:     linear-gradient(135deg, #fde047, #eab308);
 
   --btn-hover-scale: 1.06;
   --btn-active-scale: 0.94;
 
   --text-primary:  #ffffff;
   --text-dim:      rgba(255, 255, 255, 0.45);
-  --text-op:       #e0d9ff;
+  --text-op:       #fef08a;
 
   --radius-calc: 28px;
   --radius-btn:  18px;
@@ -72,20 +72,20 @@ body {
 
 .orb-1 {
   width: 420px; height: 420px;
-  background: radial-gradient(circle, #7c3aed, transparent 70%);
+  background: radial-gradient(circle, #eab308, transparent 70%);
   top: -80px; left: -80px;
   animation-duration: 13s;
 }
 .orb-2 {
   width: 340px; height: 340px;
-  background: radial-gradient(circle, #2563eb, transparent 70%);
+  background: radial-gradient(circle, #f59e0b, transparent 70%);
   bottom: -60px; right: -60px;
   animation-duration: 16s;
   animation-delay: -4s;
 }
 .orb-3 {
   width: 260px; height: 260px;
-  background: radial-gradient(circle, #db2777, transparent 70%);
+  background: radial-gradient(circle, #d97706, transparent 70%);
   bottom: 30%; left: 60%;
   animation-duration: 10s;
   animation-delay: -7s;
@@ -199,7 +199,7 @@ body {
   animation: slide-in 0.2s ease;
 }
 
-.history-item span { color: rgba(167, 139, 250, 0.8); }
+.history-item span { color: rgba(253, 224, 71, 0.8); }
 
 @keyframes slide-in {
   from { opacity: 0; transform: translateY(-4px); }
@@ -256,7 +256,7 @@ body {
 
 /* Focus ring (keyboard navigation) */
 .btn:focus-visible {
-  box-shadow: 0 0 0 3px rgba(167, 139, 250, 0.7);
+  box-shadow: 0 0 0 3px rgba(253, 224, 71, 0.7);
 }
 
 /* ── Button variants ── */
@@ -283,18 +283,18 @@ body {
 
 .btn-op {
   background: var(--btn-op-bg);
-  border: 1px solid rgba(99,102,241,0.3);
+  border: 1px solid rgba(234,179,8,0.3);
   color: var(--text-op);
   font-weight: 600;
-  box-shadow: 0 4px 18px rgba(99,102,241,0.35);
+  box-shadow: 0 4px 18px rgba(234,179,8,0.35);
 }
 .btn-op:hover {
-  background: rgba(99,102,241,0.75);
-  box-shadow: 0 8px 24px rgba(99,102,241,0.5);
+  background: rgba(234,179,8,0.75);
+  box-shadow: 0 8px 24px rgba(234,179,8,0.5);
 }
 .btn-op.active {
-  background: rgba(167,139,250,0.8);
-  box-shadow: 0 8px 28px rgba(167,139,250,0.55);
+  background: rgba(253,224,71,0.8);
+  box-shadow: 0 8px 28px rgba(253,224,71,0.55);
 }
 
 .btn-eq {
@@ -302,10 +302,10 @@ body {
   border: none;
   font-weight: 700;
   font-size: 1.5rem;
-  box-shadow: 0 6px 24px rgba(99,102,241,0.5);
+  box-shadow: 0 6px 24px rgba(234,179,8,0.5);
 }
 .btn-eq:hover {
-  box-shadow: 0 10px 32px rgba(99,102,241,0.65);
+  box-shadow: 0 10px 32px rgba(234,179,8,0.65);
   filter: brightness(1.1);
 }
 
@@ -314,7 +314,7 @@ body {
 
 /* ── Active operator highlight ── */
 .btn-op.active {
-  outline: 2px solid rgba(167,139,250,0.6);
+  outline: 2px solid rgba(253,224,71,0.6);
   outline-offset: 1px;
 }
 
